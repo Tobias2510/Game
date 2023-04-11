@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.headline{
+    border-bottom: solid black 3px;
+}
+
+.game{
+    width: 100%;
+}
