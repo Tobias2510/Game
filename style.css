@@ -1,12 +1,22 @@
 body{
+
+    --header_height: 3rem;
+
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 .headline{
+    height: var(--header_height);
     border-bottom: solid black 3px;
 }
 
 .game{
+    position: absolute;
+    top: 5rem;
+    left: 0;
     width: 100%;
+    height: calc(100% - 5rem);
+    display: grid;
+    place-items: center;
 }
