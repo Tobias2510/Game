@@ -20,3 +20,21 @@ body{
     display: grid;
     place-items: center;
 }
+
+.ball{
+    position: relative;
+}
+
+.drop{
+    animation-name: drop_anim;
+    animation-duration: 1.75s;
+}
+
+@keyframes drop_anim{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 16rem;
+    }
+}

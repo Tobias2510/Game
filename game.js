@@ -31,6 +31,10 @@ function gameStart(){
 function createBall(){
     let random=Math.floor(Math.random()*4);
     ball.src=`/images/${colors[random]}.png`;
+    ball.classList.add("drop");
+    setTimeout(()=>{
+        ball.classList.remove("drop");
+    }, 1750);
 }
 
 //gameStart();
