@@ -12,6 +12,19 @@
         <h1>Game</h1>
     </header>
     <div class="game">
+        <button class="reset" onclick="reset()">Reset Highscore</button>
+        <div class="score">
+            <div>Score: </div>
+            <div id="score">0</div>
+        </div>
+        <div class="highscore">
+            <div>Highscore: </div>
+            <div id="highscore">0</div>
+        </div>
+        <div class="gameOver">
+            <h1>gameOver</h1>
+            <button onclick="reload()">Restart</button>
+        </div>
         <img id="ball" class="ball" src="" alt="image couldnt load">
         <img id="rectangle" src="/images/rectangle.png" alt="image couldnt load">
     </div>

@@ -6,6 +6,10 @@ body{
     text-align: center;
 }
 
+button{
+    cursor: pointer;
+}
+
 .headline{
     height: var(--header_height);
     border-bottom: solid black 3px;
@@ -21,14 +25,60 @@ body{
     place-items: center;
 }
 
+.score{
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+    display: flex;
+    border: solid black 2px;
+}
+
+.highscore{
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    display: flex;
+    border: solid black 2px;
+}
+
+.reset{
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+.gameOver{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    margin: 1rem 1rem 1rem 1rem;
+    border: solid black 2px;
+    background-color: white;
+    z-index: 1;
+}
+
 .ball{
     position: relative;
 }
 
-.drop{
+.drop1{
     animation-name: drop_anim;
-    animation-duration: 1.75s;
+    animation-duration: 1900ms;
 }
+
+.drop2{
+    animation-name: drop_anim;
+    animation-duration: 1400ms;
+}
+
+.drop3{
+    animation-name: drop_anim;
+    animation-duration: 900ms;
+}
+
+
 
 @keyframes drop_anim{
     0%{
