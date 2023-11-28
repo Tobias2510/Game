@@ -74,7 +74,7 @@ function checkGameOver(){
 }
 
 function createBall(random){
-    ball.src=`/images/${colors[random]}.png`;
+    ball.src=`./images/${colors[random]}.png`;
     ball.classList.add(`drop${dropnum}`);
     setTimeout(()=>{
         ball.classList.remove(`drop${dropnum}`);
